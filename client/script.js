@@ -68,7 +68,7 @@ const handleSubmit = async(e)=>{
     chatContainer.scrollTop=chatContainer.scrollHeight
     const messageDiv = document.getElementById(uniqueId)
     loader(messageDiv)
-    const response=await fetch('http://localhost:3000',{
+    const response=await fetch('https://codehelper.onrender.com/',{
         method:"POST",
         headers:{
             'Content-Type':"application/json"
